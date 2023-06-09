@@ -1,0 +1,19 @@
+>>>init.lua
+    Es el primer archivo que se abre al iniciar nvim. En este archivo
+    se especifican los archivos que se van a hacer require() de la carpeta /lua.
+    require("path en /lua").
+    Los archivos que se hagan require() se cargan al iniciar el nvim, y se corren
+    los comandos que esten en estos.
+
+>>>/lua
+    En este directorio se agregan los archivos .lua que especifican configuraciones
+    >>>plugins.lua
+        El archivo que carga Packer para ver que plugins cargar
+    >>>remap.lua
+        Este archivo esta requireado desde init.lua por lo que se cargan sus configs.
+        Lo cree yo. Tiene comandos que agregan comandos de vim.
+    >>>set.lua
+        En este archivo se especifican comandos de settings
+
+>>>/after
+    En este directorio se especifican las configuraciones de cada plugin de Packer
