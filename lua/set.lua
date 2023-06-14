@@ -28,4 +28,5 @@ vim.opt.isfname:append("@-@")
 
 vim.opt.updatetime = 50
 
-vim.opt.colorcolumn = "80"
+--Desactiva la columna vertical que aparece al costado
+vim.opt.colorcolumn = ""
